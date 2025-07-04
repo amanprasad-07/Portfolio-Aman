@@ -5,10 +5,12 @@
 }
 
 body {
-    background-color: #1c1c1c;
+   background-color: #1c1c1c;
+    background-image: radial-gradient(#424242 0.5px, transparent 0.5px);
+    background-size: 10px 10px;
 }
 
-hr{
+hr {
     color: #525252;
 }
 
@@ -34,8 +36,21 @@ i {
     background-color: transparent !important;
 }
 
+header{
+    position: sticky !important;
+    top: 0;
+    z-index: 9999;
+}
+
 .navbar-toggler {
-    border-color: rgba(255, 255, 255, 0.5);
+    /* border-color: rgba(255, 255, 255, 0.5); */
+    border: none;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
 }
 
 .navbar-toggler-icon {
@@ -59,8 +74,9 @@ i {
 }
 
 .card-body {
-    background-color: #1c1c1c;
-    color: aliceblue;
+background-color: #1c1c1c;
+    background-image: radial-gradient(#424242 0.5px, transparent 0.5px);
+    background-size: 10px 10px;    color: aliceblue;
     width: auto;
     min-width: 300px;
     display: flex;
@@ -72,10 +88,10 @@ i {
     filter: brightness(0) invert(1);
 }
 
-.form-label{
+.form-label {
     color: aliceblue;
 }
 
-.box{
-    background-color: #3c3c3c;
+.box {
+    background-color: #3c3c3c5f;
 }
