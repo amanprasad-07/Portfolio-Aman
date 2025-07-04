@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio-Aman</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oxanium:wght@200..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Header & Navigation Bar  -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary my-2 p-0">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="#">Protfolio.</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="#portfolio">Protfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="#career">Career</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- main body -->
+    <main class="flex-grow-1 mx-4">
+
+        <!-- Home/Hero Section  -->
+        <section class="my-5 d-flex flex-column align-items-center">
+            <img src="images/profile.jpg" class="profile-img" alt="Aman K Prasad - Profile photo">
+            <h1 class="mb-0">Aman K Prasad</h1>
+            <p class="fs-2 mb-0">Fullstack-Developer</p>
+            <a href="#" class="btn text-white pt-0 pb-2"><i class="fas fa-map-marker-alt"></i> Kerala, India</a>
+            <div class="icon">
+                <a href="https://github.com/amanprasad-07" class="btn btn-sm btn-outline-light btn-floating m-1"
+                    role="button"><i class="fab fa-github"></i></a>
+                <a href="#" class="btn btn-outline-light btn-sm btn-floating m-1" role="button"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="btn btn-outline-light btn-floating m-1 btn-sm" role="button"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="#" class="btn btn-outline-light  btn-floating m-1 btn-sm" role="button"><i
+                        class="fab fa-instagram"></i></a>
+            </div>
+             <a href="assets/Aman Prasad resume.pdf" class="btn btn-outline-success my-2" download>
+                    <i class="fa fa-download me-2"></i>Download Resume
+                </a>
+            <a href="#about" class="btn btn-lg btn-outline-light my-1">
+                <i class="fas fa-rocket"></i> Know more
+            </a>
+        </section>
+
+        <hr>
+
+        <!-- About Section-->
+        <section id="about" class="my-5 mx-4 d-flex flex-column align-items-center">
+            <h2>About Me</h2>
+            <p>My name is Aman, and I’m a web development student based in Kerala, India. I’m currently enrolled in a
+                full-stack development course, where I’m learning to build responsive and functional websites using
+                modern web technologies.</p>
+        </section>
+
+        <hr>
+
+        <!-- Skills Section  -->
+        <section id="skills" class="my-5 d-flex flex-column align-items-center">
+            <h2>Skills</h2>
+            <div class="row ">
+                <div class="col mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex w-100">
+                                <h5 class="card-title">Frontend</h5>
+                            </div>
+                            <div class="d-flex flex-column gap-1">
+                                <p><i class="fab fa-html5"></i> HTML5</p>
+                                <p><i class="fab fa-css3-alt"></i> CSS3</p>
+                                <p><i class="fab fa-js-square"></i> JavaScript</p>
+                                <p><i class="bi bi-bootstrap-fill"></i> Bootstrap 5</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex w-100">
+                                <h5 class="card-title">Backend</h5>
+                            </div>
+                            <div class="d-flex flex-column gap-1">
+                                <p><i class="fab fa-node-js"></i> Node.js</p>
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                                        alt="Express.js" width="25" class="me-1 filter">
+                                    <span>Express.js</span>
+                                </div>
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                                        alt="MongoDB" width="25" class="me-0 filter">
+                                    <span>MongoDB</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex w-100">
+                                <h5 class="card-title">Tools</h5>
+                            </div>
+                            <div class="d-flex flex-column gap-1">
+                                <p><i class="fab fa-git-alt"></i> Git</p>
+                                <p><i class="fab fa-github"></i> GitHub</p>
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                                        alt="VS Code" width="15" class="me-1 filter">
+                                    <span>VS Code</span>
+                                </div>
+                                <p><i class="fab fa-figma"></i> Figma</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="my-5 d-flex flex-column align-items-center">
+            <h2>Portfolio</h2>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col mb-3">
+                        <div class="card">
+                            <img src="https://www.infintechdesigns.com/wp-content/uploads/2021/02/ecommerce-CRO-services-Infintech-Designs.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Zay Shop – eCommerce Website Template</h5>
+                                <p class="card-text">Zay Shop is a responsive eCommerce website built using Bootstrap 5.
+                                    It features a modern layout with a homepage carousel, product listings, and category
+                                    highlights. The design showcases UI layout and responsive design skills for online
+                                    shopping platforms.</p>
+                                <a href="#" class="btn btn-primary">Visit Website</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <div class="card">
+                            <img src="https://c7.uihere.com/files/578/422/462/still-life-vases-decoration-ceramic.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">BhumiCraft – Pottery Studio Website</h5>
+                                <p class="card-text">BhumiCraft is a responsive pottery studio website built with HTML,
+                                    CSS, and Bootstrap. It showcases handcrafted products with an earthy design and
+                                    clean layout.</p>
+                                <a href="#" class="btn btn-primary">Visit Website</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <div class="card">
+                            <img src="https://storage.needpix.com/rsynced_images/facebook-76536_1280.png"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Facebook Login Page Clone</h5>
+                                <p class="card-text">A responsive clone of Facebook's login page, built using HTML and
+                                    CSS. It replicates the layout, design, and structure of the official login interface
+                                    with attention to detail and responsiveness.</p>
+                                <a href="#" class="btn btn-primary">Visit Website</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CV/Resume Section  -->
+        <section id="career" class="my-5 d-flex flex-column align-items-center">
+            <a href="assets/Aman Prasad resume.pdf" class="btn btn-outline-success mb-4" download>
+                <i class="fa fa-download me-2"></i>Download My Resume
+            </a>
+            <h2>Career Milestones</h2>
+            <div class="container border-start border-2 ps-4">
+                <div class="mb-4">
+                    <h5 class="fw-bold text-success">2025 – Present</h5>
+                    <p>Learning Full-Stack Web Development through online platforms. Focused on MERN stack, responsive
+                        design, and UI/UX basics.</p>
+                </div>
+
+                <div class="mb-4">
+                    <h5 class="fw-bold text-success">2024</h5>
+                    <p>Completed several HTML/CSS-based frontend projects, including a portfolio site and eCommerce
+                        clone (Zay Shop).</p>
+                </div>
+
+                <div class="mb-4">
+                    <h5 class="fw-bold text-success">2023</h5>
+                    <p>Self-studied basic HTML and explored creative web layouts. Built a Facebook login page clone to
+                        practice layout fidelity.</p>
+                </div>
+
+                <div class="mb-4">
+                    <h5 class="fw-bold text-success">2022</h5>
+                    <p>Began exploring web development. Tried out personal blogs and experimenting with Figma UI design
+                        tools.</p>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <!-- Contact Section  -->
+        <section id="contact" class="my-5 d-flex flex-column align-items-center">
+            <div class="container">
+                <h2 class="text-center mb-1 display-5">Get in Touch</h2>
+                <p class="text-center mb-2 px-4">
+                    Whether you're looking to collaborate on a project, need a reliable developer for your team, or have
+                    any questions about my work—feel free to get in touch. I'm open to new opportunities and always
+                    ready to discuss how I can contribute to your goals</p>
+                <div class="row g-4">
+                    <!-- Contact Form -->
+                    <div class="col-md-7">
+                        <form action="#" method="POST">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" class="form-control" id="subject"
+                                    placeholder="Let us know how we can help">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="5"
+                                    placeholder="Write your message here..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-outline-light">Send Message</button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="col-md-5">
+                        <div class="p-4 rounded box">
+                            <h5 class="mb-3">Location</h5>
+                            <p>Kerala, India</p>
+
+                            <h5 class="mt-4 mb-3">Contact</h5>
+                            <p>Email: 1999amanprasad07@gmail.com<br>Phone: +91 8137840282</p>
+
+                            <h5 class="mt-4 mb-3">Connect with Me</h5>
+                            <a href="https://facebook.com/" class="text-light me-3" target="_blank"><i
+                                    class="fab fa-facebook fa-lg"></i></a>
+                            <a href="https://instagram.com/" class="text-light me-3" target="_blank"><i
+                                    class="fab fa-instagram fa-lg"></i></a>
+                            <a href="https://github.com/amanprasad-07" class="text-light me-3" target="_blank"><i
+                                    class="fab fa-github fa-lg"></i></a>
+                            <a href="https://linkedin.com/" class="text-light" target="_blank"><i
+                                    class="fab fa-linkedin fa-lg"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer & Social links -->
+    <footer class="bg-dark text-white text-center text-lg-start mt-5 ">
+        <div class="container p-4">
+            <div class="row">
+
+                <!-- Company Info -->
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Aman K Prasad</h5>
+                    <p>
+                        Fullstack-Developer
+                    </p>
+                </div>
+
+                <!-- Social Links -->
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0 text-lg-end">
+                    <h5 class="text-uppercase">Follow me</h5>
+                    <a href="#" class="btn btn-outline-light btn-floating m-1" role="button"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="btn btn-outline-light btn-floating m-1" role="button"><i
+                            class="fab fa-github"></i></a>
+                    <a href="#" class="btn btn-outline-light btn-floating m-1" role="button"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="#" class="btn btn-outline-light btn-floating m-1" role="button"><i
+                            class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center p-3 bg-secondary text-muted ">
+            <p class="m-0">© 2025 Aman K Prasad. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
