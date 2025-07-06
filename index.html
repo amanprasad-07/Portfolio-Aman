@@ -18,9 +18,9 @@
 
     <!-- Header & Navigation Bar  -->
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary p-0 mb-6">
             <div class="container-fluid">
-                <a class="navbar-brand text-white" href="#">Portfolio.</a>
+                <a class="navbar-brand text-white" href="#home">Portfolio.</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -29,7 +29,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link active text-white" aria-current="page" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active text-white" aria-current="page" href="#about">About</a>
@@ -50,51 +50,79 @@
     <main class="flex-grow-1 mx-4">
 
         <!-- Home/Hero Section  -->
-        <section class="my-5 d-flex flex-column align-items-center">
-            <img src="images/profile.jpg" class="profile-img" alt="Aman K Prasad - Profile photo">
-            <h1 class="mb-0">Aman K Prasad</h1>
-            <p class="fs-6 mb-0">Fullstack-Developer</p>
-            <a href="#" class="btn text-white pt-0 pb-2"><i class="fas fa-map-marker-alt"></i> Kerala, India</a>
-            <div class="icon">
-                <a href="https://github.com/amanprasad-07" class="btn btn-sm btn-outline-light btn-floating m-1"
-                    role="button"><i class="fab fa-github"></i></a>
-                <a href="#" class="btn btn-outline-light btn-sm btn-floating m-1" role="button"><i
-                        class="fab fa-linkedin-in"></i></a>
-                <a href="#" class="btn btn-outline-light btn-floating m-1 btn-sm" role="button"><i
-                        class="fab fa-facebook-f"></i></a>
-                <a href="#" class="btn btn-outline-light  btn-floating m-1 btn-sm" role="button"><i
-                        class="fab fa-instagram"></i></a>
+        <section id="home"
+            class="my-5 container d-flex flex-column flex-lg-row align-items-center justify-content-center text-center text-lg-start gap-5 py-5 px-4">
+            <!-- Profile Image -->
+            <div class="profile-image mb-2 mb-lg-0">
+                <img src="images/profile.jpg" class="profile-img" alt="Aman K Prasad - Profile photo"
+                    width="200">
             </div>
-             <a href="assets/Aman Prasad resume.pdf" class="btn btn-outline-success my-2" download>
+
+            <!-- Text Content -->
+            <div class="profile-content">
+                <h1 class="mb-1 display-4 fw-bold">Aman K Prasad</h1>
+                <p class="fs-5 text-white-50">Fullstack Developer</p>
+                <p><i class="fas fa-map-marker-alt me-2"></i>Kerala, India</p>
+
+                <!-- Social Icons -->
+                <div class="icon mb-3">
+                    <a href="https://github.com/amanprasad-07" class="btn btn-sm btn-outline-light btn-floating m-1"
+                        role="button"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/" class="btn btn-outline-light btn-sm btn-floating m-1"
+                        role="button"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://facebook.com/" class="btn btn-outline-light btn-sm btn-floating m-1"
+                        role="button"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com/" class="btn btn-outline-light btn-sm btn-floating m-1"
+                        role="button"><i class="fab fa-instagram"></i></a>
+                </div>
+
+                <!-- Resume + Portfolio Buttons -->
+                <a href="assets/Aman Prasad resume.pdf" class="btn btn-outline-success my-2 me-2" download>
                     <i class="fa fa-download me-2"></i>Download Resume
                 </a>
-            <a href="#portfolio" class="btn btn-lg btn-outline-light my-1">
-                <i class="fas fa-rocket"></i> My Works
-            </a>
+                <a href="#portfolio" class="btn btn-outline-light btn-lg my-2">
+                    <i class="fas fa-rocket me-2"></i>My Works
+                </a>
+            </div>
         </section>
+
 
         <hr>
 
         <!-- About Section-->
-        <section id="about" class="my-5 mx-4 d-flex flex-column align-items-center">
-            <h2>About Me</h2>
-            <p>My name is Aman, and I’m a web development student based in Kerala, India. I’m currently enrolled in a
-                full-stack development course, where I’m learning to build responsive and functional websites using
-                modern web technologies.</p>
+        <section id="about" class="my-5 py-5 px-4">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <!-- Text Column -->
+                    <div class="col">
+                        <h2 class="mb-3">About Me</h2>
+                        <p class="lead text-white">
+                            My name is Aman, and I’m a web development student based in Kerala, India. I’m currently
+                            enrolled in a full-stack development course, where I’m learning to build responsive and
+                            functional websites using modern web technologies.
+                        </p>
+                        <p class="text-white">
+                            I enjoy turning ideas into clean, interactive digital experiences that are both
+                            user-friendly and visually appealing.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
+
 
         <hr>
 
         <!-- Skills Section  -->
-        <section class="my-5 d-flex flex-column align-items-center">
+        <section class="my-5 d-flex flex-column align-items-center py-5 px-4">
             <h2>Skills</h2>
-            <div class="row ">
-                <div class="col mb-3">
-                    <div class="card">
+            <div class="row w-100 justify-content-center">
+                <!-- Frontend -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
                         <div class="card-body">
-                            <div class="d-flex w-100">
-                                <h5 class="card-title">Frontend</h5>
-                            </div>
+                            <h5 class="card-title">Frontend</h5>
                             <div class="d-flex flex-column gap-1">
                                 <p><i class="fab fa-html5"></i> HTML5</p>
                                 <p><i class="fab fa-css3-alt"></i> CSS3</p>
@@ -104,14 +132,12 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col mb-3">
-                    <div class="card">
+
+                <!-- Backend -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
                         <div class="card-body">
-                            <div class="d-flex w-100">
-                                <h5 class="card-title">Backend</h5>
-                            </div>
+                            <h5 class="card-title">Backend</h5>
                             <div class="d-flex flex-column gap-1">
                                 <p><i class="fab fa-node-js"></i> Node.js</p>
                                 <div class="d-flex align-items-center mb-3">
@@ -128,14 +154,12 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col mb-3">
-                    <div class="card">
+
+                <!-- Tools -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
                         <div class="card-body">
-                            <div class="d-flex w-100">
-                                <h5 class="card-title">Tools</h5>
-                            </div>
+                            <h5 class="card-title">Tools</h5>
                             <div class="d-flex flex-column gap-1">
                                 <p><i class="fab fa-git-alt"></i> Git</p>
                                 <p><i class="fab fa-github"></i> GitHub</p>
@@ -152,50 +176,59 @@
             </div>
         </section>
 
+
         <hr>
 
         <!-- Portfolio Section -->
-        <section id="portfolio" class="my-5 d-flex flex-column align-items-center">
+        <section id="portfolio" class="mt-5 mb-1 d-flex flex-column align-items-center py-5 px-4">
             <h2>Portfolio</h2>
             <div class="container text-center">
-                <div class="row">
-                    <div class="col mb-3">
-                        <div class="card">
+                <div class="row align-items-stretch">
+                    <!-- Card 1 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100 d-flex flex-column shadow-sm">
                             <img src="https://www.infintechdesigns.com/wp-content/uploads/2021/02/ecommerce-CRO-services-Infintech-Designs.jpg"
-                                class="card-img-top" alt="...">
-                            <div class="card-body">
+                                class="card-img-top" alt="Zay Shop">
+                            <div class="card-body d-flex flex-column flex-grow-1">
                                 <h5 class="card-title">Zay Shop – eCommerce Website Template</h5>
-                                <p class="card-text">Zay Shop is a responsive eCommerce website built using Bootstrap 5.
-                                    It features a modern layout with a homepage carousel, product listings, and category
-                                    highlights. The design showcases UI layout and responsive design skills for online
-                                    shopping platforms.</p>
-                                <a href="#" class="btn btn-outline-light">Visit Website</a>
+                                <p class="card-text flex-grow-1">Zay Shop is a responsive eCommerce website built using
+                                    Bootstrap 5. It features a modern layout with a homepage carousel, product listings,
+                                    and category highlights. The design showcases UI layout and responsive design skills
+                                    for online shopping platforms.</p>
+                                <a href="https://amanprasad-07.github.io/e-comm/" class="btn btn-outline-light mt-auto"
+                                    target="_blank">Visit Website</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col mb-3">
-                        <div class="card">
+
+                    <!-- Card 2 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100 d-flex flex-column shadow-sm">
                             <img src="https://c7.uihere.com/files/578/422/462/still-life-vases-decoration-ceramic.jpg"
-                                class="card-img-top" alt="...">
-                            <div class="card-body">
+                                class="card-img-top" alt="BhumiCraft">
+                            <div class="card-body d-flex flex-column flex-grow-1">
                                 <h5 class="card-title">BhumiCraft – Pottery Studio Website</h5>
-                                <p class="card-text">BhumiCraft is a responsive pottery studio website built with HTML,
-                                    CSS, and Bootstrap. It showcases handcrafted products with an earthy design and
-                                    clean layout.</p>
-                                <a href="#" class="btn btn-outline-light">Visit Website</a>
+                                <p class="card-text flex-grow-1">BhumiCraft is a responsive pottery studio website built
+                                    with HTML, CSS, and Bootstrap. It showcases handcrafted products with an earthy
+                                    design and clean layout.</p>
+                                <a href="https://amanprasad-07.github.io/Assignment-5/"
+                                    class="btn btn-outline-light mt-auto" target="_blank">Visit Website</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col mb-3">
-                        <div class="card">
+
+                    <!-- Card 3 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100 d-flex flex-column shadow-sm">
                             <img src="https://storage.needpix.com/rsynced_images/facebook-76536_1280.png"
-                                class="card-img-top" alt="...">
-                            <div class="card-body">
+                                class="card-img-top" alt="Facebook Clone">
+                            <div class="card-body d-flex flex-column flex-grow-1">
                                 <h5 class="card-title">Facebook Login Page Clone</h5>
-                                <p class="card-text">A responsive clone of Facebook's login page, built using HTML and
-                                    CSS. It replicates the layout, design, and structure of the official login interface
-                                    with attention to detail and responsiveness.</p>
-                                <a href="#" class="btn btn-outline-light">Visit Website</a>
+                                <p class="card-text flex-grow-1">A responsive clone of Facebook's login page, built
+                                    using HTML and CSS. It replicates the layout, design, and structure of the official
+                                    login interface with attention to detail and responsiveness.</p>
+                                <a href="https://amanprasad-07.github.io/facebook-clone/"
+                                    class="btn btn-outline-light mt-auto" target="_blank">Visit Website</a>
                             </div>
                         </div>
                     </div>
@@ -203,42 +236,43 @@
             </div>
         </section>
 
+
         <!-- CV/Resume Section  -->
-        <section class="my-5 d-flex flex-column align-items-center">
+        <section class="mb-5 mt-3 d-flex flex-column align-items-center py-5 px-4">
             <a href="assets/Aman Prasad resume.pdf" class="btn btn-outline-success mb-4" download>
-                <i class="fa fa-download me-2"></i>Download My Resume
+                <i class="fa fa-download me-2"></i>Download Resume
             </a>
-            <h2>Career Milestones</h2>
+            <h2 class="mt-4">Career Milestones</h2>
             <div class="container border-start border-2 ps-4">
-                <div class="mb-4">
-                    <h5>2025 – Present</h5>
-                    <p>Learning Full-Stack Web Development through online platforms. Focused on MERN stack, responsive
-                        design, and UI/UX basics.</p>
-                </div>
-
-                <div class="mb-4">
-                    <h5>2024</h5>
-                    <p>Completed several HTML/CSS-based frontend projects, including a portfolio site and eCommerce
-                        clone (Zay Shop).</p>
-                </div>
-
-                <div class="mb-4">
-                    <h5>2023</h5>
-                    <p>Self-studied basic HTML and explored creative web layouts. Built a Facebook login page clone to
-                        practice layout fidelity.</p>
-                </div>
-
-                <div class="mb-4">
-                    <h5>2022</h5>
-                    <p>Began exploring web development. Tried out personal blogs and experimenting with Figma UI design
-                        tools.</p>
+                <div class="timeline">
+                    <div class="timeline-item mb-5">
+                        <h5 class="fw-bold">2025 – Present</h5>
+                        <p>Learning Full-Stack Web Development through online platforms. Focused on MERN stack,
+                            responsive design, and UI/UX basics.</p>
+                    </div>
+                    <div class="timeline-item mb-5">
+                        <h5 class="fw-bold">2024</h5>
+                        <p>Completed several HTML/CSS-based frontend projects, including a portfolio site and eCommerce
+                            clone (Zay Shop).</p>
+                    </div>
+                    <div class="timeline-item mb-5">
+                        <h5 class="fw-bold">2023</h5>
+                        <p>Self-studied basic HTML and explored creative web layouts. Built a Facebook login page clone
+                            to practice layout fidelity.</p>
+                    </div>
+                    <div class="timeline-item mb-3">
+                        <h5 class="fw-bold">2022</h5>
+                        <p>Began exploring web development. Tried out personal blogs and experimented with Figma UI
+                            design tools.</p>
+                    </div>
                 </div>
             </div>
+
         </section>
         <hr>
 
         <!-- Contact Section  -->
-        <section id="contact" class="my-5 d-flex flex-column align-items-center">
+        <section id="contact" class="my-5 d-flex flex-column align-items-center py-5 px-4">
             <div class="container">
                 <h2 class="text-center mb-1 display-5">Get in Touch</h2>
                 <p class="text-center mb-2 px-4">
@@ -281,14 +315,14 @@
                             <p>Email: 1999amanprasad07@gmail.com<br>Phone: +91 8137840282</p>
 
                             <h5 class="mt-4 mb-3">Connect with Me</h5>
-                            <a href="https://facebook.com/" class="text-light me-3" target="_blank"><i
-                                    class="fab fa-facebook fa-lg"></i></a>
-                            <a href="https://instagram.com/" class="text-light me-3" target="_blank"><i
-                                    class="fab fa-instagram fa-lg"></i></a>
                             <a href="https://github.com/amanprasad-07" class="text-light me-3" target="_blank"><i
                                     class="fab fa-github fa-lg"></i></a>
                             <a href="https://linkedin.com/" class="text-light" target="_blank"><i
                                     class="fab fa-linkedin fa-lg"></i></a>
+                            <a href="https://facebook.com/" class="text-light me-3" target="_blank"><i
+                                    class="fab fa-facebook fa-lg"></i></a>
+                            <a href="https://instagram.com/" class="text-light me-3" target="_blank"><i
+                                    class="fab fa-instagram fa-lg"></i></a>
                         </div>
                     </div>
 
@@ -315,13 +349,13 @@
                 <div class="col-lg-6 col-md-12 mb-4 mb-md-0 text-lg-end">
                     <h5 class="text-uppercase">Follow me</h5>
                     <a href="#" class="btn btn-outline-light btn-floating m-1" role="button"><i
-                            class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="btn btn-outline-light btn-floating m-1" role="button"><i
                             class="fab fa-github"></i></a>
-                    <a href="#" class="btn btn-outline-light btn-floating m-1" role="button"><i
-                            class="fab fa-instagram"></i></a>
-                    <a href="#" class="btn btn-outline-light btn-floating m-1" role="button"><i
+                    <a href="https://linkedin.com/" class="btn btn-outline-light btn-floating m-1" role="button"><i
                             class="fab fa-linkedin-in"></i></a>
+                    <a href="https://facebook.com/" class="btn btn-outline-light btn-floating m-1" role="button"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com/" class="btn btn-outline-light btn-floating m-1" role="button"><i
+                            class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>

@@ -65,7 +65,14 @@ header{
     width: 100px;
     height: auto;
     border-radius: 10px;
-    margin-bottom: 20px;
+}
+
+@media (min-width: 992px) {
+    .profile-img {
+        width: 200px;
+        border-radius: 20px;
+        margin-bottom: 0;
+    }
 }
 
 .card {
